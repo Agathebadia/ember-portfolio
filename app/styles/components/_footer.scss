@@ -1,0 +1,20 @@
+footer {
+  background-color: #FEF4F2;
+  padding: 5px 10px 5px 10px;
+  margin-top: 4em;
+
+  span {
+    display: flex;
+    justify-content: center;
+
+  }
+  i {
+    color: #333333;
+    padding: 8px 8px 8px 8px;
+    font-size: 20px;
+
+    &:hover {
+    color: #f7a799;
+    }
+  }
+}

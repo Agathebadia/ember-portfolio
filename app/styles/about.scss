@@ -1,0 +1,58 @@
+* {
+font-family: 'Cantarell', sans-serif;
+}
+
+h1, h2, h3 {
+font-family: 'Fjalla One', sans-serif !important;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .skill {
+    text-align: center;
+    max-width: 300px;
+    min-width: 280px;
+    max-height: 135px;
+    margin: 10px 20px 30px 20px;
+    transition: 0.5s;
+
+    .textOverText {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &:hover, &:focus {
+        -ms-transform: scale(0.90); /* IE  */
+        -webkit-transform: scle(0.90); /* Safari */
+        transform: scale(0.90);
+        transition: 0.8s;
+      }
+
+
+    .textOverText:after {
+      content:attr(data-inactive);
+      top: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      white-space: pre-wrap;
+      overflow: hidden;
+    }
+
+    .textOverText:hover:after {
+      content:attr(data-hover);
+      transition: 0.8s;
+      top: 0;
+    }
+    }
+    }
+
+    // // light peach: #FEF4F2;
+    //   medium peach: #F9E0DB #
+    //   dark-peach: #f7a799}
+
+
