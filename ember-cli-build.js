@@ -7,9 +7,7 @@ module.exports = function(defaults) {
     // Add options here
     outputPaths: {
       app: {
-        css: {
-          'second-stylesheet': '/assets/second-stylesheet.css'
-        }
+
       }
     }
 
