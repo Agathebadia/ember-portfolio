@@ -8,13 +8,15 @@ footer {
     justify-content: center;
 
   }
-  i {
+  a {
     color: #333333;
     padding: 8px 8px 8px 8px;
     font-size: 20px;
 
     &:hover {
     color: #f7a799;
+    font-style: normal;
+    text-decoration: none;
     }
   }
 }
