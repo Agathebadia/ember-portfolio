@@ -5,6 +5,14 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
+    outputPaths: {
+      app: {
+        css: {
+          'second-stylesheet': '/assets/second-stylesheet.css'
+        }
+      }
+    }
+
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -21,10 +29,5 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   return app.toTree();
-};
 
-let app = new EmberApp(defaults, {
-    sassOptions: {
-      extension: 'scss'
-    }
-  });
+};
