@@ -54,7 +54,7 @@ font-family: 'Fjalla One', sans-serif !important;
       object-fit: cover;
       box-shadow: 1rem 1rem 1rem -1rem #e5e3e3;
 
-      h3, p, a {
+      p, a {
         color: black;
         text-decoration: none;
         font-style: normal;
@@ -63,7 +63,7 @@ font-family: 'Fjalla One', sans-serif !important;
 
       .post-info {
         max-height: 100px;
-        padding: 5px 5px 5px 5px;
+        padding-top: 15px;
         text-align: center;
       }
 

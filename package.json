@@ -55,5 +55,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "ember-cli-slick": "^3.0.3"
   }
 }
