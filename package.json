@@ -16,7 +16,7 @@
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",
-    "deploy": "ember build --environment production && ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\" && git push origin gh-pages:gh-pages"
+    "deploy": "ember build --environment production && ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\" && git push website gh-pages:master"
 
   },
   "devDependencies": {
