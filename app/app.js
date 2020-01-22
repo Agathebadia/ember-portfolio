@@ -9,13 +9,5 @@ export default class App extends Application {
   Resolver = Resolver;
 }
 
- $('.post-wrapper').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
-
 loadInitializers(App, config.modulePrefix);
-
 
