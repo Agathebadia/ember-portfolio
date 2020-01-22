@@ -22,3 +22,9 @@ module.exports = function(defaults) {
 
   return app.toTree();
 };
+
+let app = new EmberApp(defaults, {
+    sassOptions: {
+      extension: 'scss'
+    }
+  });
