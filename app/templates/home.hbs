@@ -29,13 +29,14 @@
 </div>
 
 <div class="container">
-      <!-- Post slider
-        <div class="post-slider"> -->
+      <!-- Post slider -->
+        <div class="post-slider">
 <!--       <i class="fas fa-chevron-left prev"></i>
   <i class="fas fa-chevron-right next"></i> -->
 
   <div class="post-wrapper">
-    {{#slick-slider autoplay=true arrows=true nextArrow="<i class='fas fa-chevron-right next'></i>" prevArrow="<i class='fas fa-chevron-left prev'></i>"}}
+
+    {{#slick-slider adaptiveHeight=false pauseOnHover=true autoplay=true arrows=false nextArrow="<i class='fas fa-chevron-right next'></i>" prevArrow="<i class='fas fa-chevron-left prev'></i>"}}
           <!-- <div class="post">
             <a href="http://www.myoja.de/" target="_blank">
             <div class="slider-image">
@@ -82,6 +83,7 @@
           <div class="slider-image">
             <a href="http://www.myoja.de/" target="_blank">
             <img src="assets/images/oja.png">
+            <p>Final project</p>
           </a>
           </div>
         </div>
@@ -90,6 +92,7 @@
           <div class="slider-image">
             <a href="https://tooli-capmarvel.herokuapp.com/" target="_blank">
             <img src="assets/images/tooli.png">
+            <p>One week project</p>
           </a>
           </div>
         </div>
@@ -98,18 +101,14 @@
           <div class="slider-image">
             <a href="https://rails-agathe-cocktail-322.herokuapp.com/" target="_blank">
               <img src="assets/images/miss-cocktail.png">
+              <p>One day project</p>
             </a>
-          </div>
-        </div>
-
-        <div class="post">
-          <div class="slider-image"><img src="https://static2.businessinsider.com/image/4f3433986bb3f7b67a00003c/a-parasite-found-in-cats-could-be-manipulating-our-brains.jpg">
           </div>
         </div>
 
         {{/slick-slider}}
       </div>
     </div>
-    <!--     </div> -->
+        </div>
 
 
