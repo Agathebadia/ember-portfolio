@@ -1,5 +1,5 @@
 p {
-font-family: 'Cantarell', sans-serif;
+  font-family: 'Cantarell', sans-serif;
 }
 
 i.fab {
@@ -8,7 +8,7 @@ i.fab {
 }
 
 h1, h2, h3 {
-font-family: 'Fjalla One', sans-serif !important;
+  font-family: 'Fjalla One', sans-serif !important;
 }
 
 .skills {
@@ -36,26 +36,38 @@ font-family: 'Fjalla One', sans-serif !important;
         -webkit-transform: scle(0.90); /* Safari */
         transform: scale(0.90);
         transition: 0.8s;
+        a {
+          text-decoration: none;
+          font-style: normal;
+          color: black;
+        }
+
       }
 
 
-    .textOverText:after {
-      content:attr(data-inactive);
-      top: 100%;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      white-space: pre-wrap;
-      overflow: hidden;
-    }
+      .textOverText:after {
+        content:attr(data-inactive);
+        top: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        white-space: pre-wrap;
+        overflow: hidden;
+        font-style: normal;
+        text-decoration: none;
+        color: black;
+      }
 
-    .textOverText:hover:after {
-      content:attr(data-hover);
-      transition: 0.8s;
-      top: 0;
+      .textOverText:hover:after {
+        content:attr(data-hover);
+        transition: 0.8s;
+        top: 0;
+        font-style: normal;
+        text-decoration: none;
+
+      }
     }
-    }
-    }
+  }
 
     // // light peach: #FEF4F2;
     //   medium peach: #F9E0DB #
