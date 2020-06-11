@@ -12,25 +12,51 @@ h1, h2, h3 {
   margin-top: 2em;
   margin-bottom: 4em;
   text-shadow: 3px 3px 3px #f9e0db;
+  .articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-top: 2rem;
+    .article {
+      display: grid;
+      margin: auto;
+      box-shadow: 1rem 1rem 1rem -1rem #e5e3e3;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      border-radius: 4px;
+      width: 72%;
+      transition: 0.5s;
+      img {
+        margin: auto;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+      a {
+        text-transform: none;
+        color: inherit;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        p {
+          margin: 0;
+          padding: 15px 0 15px 0;
+        }
+      }
+  &:hover, &:focus {
+        -ms-transform: scale(0.90); /* IE  */
+        -webkit-transform: scle(0.90); /* Safari */
+        transform: scale(0.90);
+        transition: 0.8s;
+      }
+    }
+  }
 }
 .container {
 
   .post-slider {
     position: relative;
-
-    // .next {
-    //   position: absolute;
-    //   top: 50%;
-    //   right: 30px;
-    //   font-size: 2em;
-    // }
-
-    // .prev {
-    //   position: absolute;
-    //   top: 50%;
-    //   right: 30px;
-    //   font-size: 2em;
-    // }
 
     .post-wrapper {
       width: 84%;
