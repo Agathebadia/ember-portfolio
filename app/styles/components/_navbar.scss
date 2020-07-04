@@ -2,17 +2,16 @@
   display: flex;
   justify-content: space-between;
   background-color: white;
+
     span {
   padding: 15px 10px 15px 10px;
-}
+  }
+
   .home {
     display: contents;
   }
   .toggle-component {
     display: inline-flex;
-  }
-  .x-toggle-container-checked {
-  background-color: purple;
   }
 
   a {
@@ -25,5 +24,14 @@
   text-decoration: none;
   color: #f7a799;
     }
+  }
+}
+
+.navbar.purple {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  a, .toggle-component, p {
+    color: #7d1785;
   }
 }
