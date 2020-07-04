@@ -43,28 +43,6 @@
     }
   }
 
-  // .cards {
-  // display: grid;
-  // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  // grid-gap: 40px;
-
-  // .card {
-  // border-radius: 3px;
-  // border-color: white;
-  // min-width: 200px;
-  // min-height: 70px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // text-align: center;
-  // margin: 0px 5px 0px 5px;
-  // background-color: white;
-  // box-shadow: -11px 15px 1px 2px #f9e0db;
-  //   img {
-  //     padding: 10px 10px 10px 10px;
-  //   }
-  // }
-  // }
   .title {
     margin-bottom: 45px;
   }
@@ -80,5 +58,16 @@
   }
 }
 
-
-
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .banner {
+    min-height: 27rem;
+   .circle-picture img {
+      width: 8rem;
+      height: 8rem;
+      margin-top: 8rem;
+    }
+    .description-card {
+      margin-bottom: 30px;
+    }
+  }
+}

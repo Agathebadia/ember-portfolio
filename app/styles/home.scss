@@ -78,3 +78,12 @@ h1, h2, h3 {
     }
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .projects {
+    .articles {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}
