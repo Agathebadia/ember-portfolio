@@ -1,8 +1,17 @@
-<nav class="navbar">
+<nav class="navbar {{if @isToggled "purple" ""}}" >
     <div class="home">
       <LinkTo @route="home">
         <strong>Home</strong>
       </LinkTo>
+      <div id="toggle-component">
+        <XToggle
+        @theme='light'
+        @value={{@isToggled}}
+        @onToggle={{@toggle}}
+        @size={{'small'}}
+        />
+        <p>Change background</p>
+      </div>
     </div>
     <div class="about-contact">
       <span><LinkTo @route="about">About</LinkTo></span>

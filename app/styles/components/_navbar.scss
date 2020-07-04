@@ -5,7 +5,17 @@
     span {
   padding: 15px 10px 15px 10px;
 }
-    a {
+  .home {
+    display: contents;
+  }
+  .toggle-component {
+    display: inline-flex;
+  }
+  .x-toggle-container-checked {
+  background-color: purple;
+  }
+
+  a {
   font-family: 'Cantarell', sans-serif;
   font-size: 18px;
   text-decoration: none;
@@ -14,7 +24,6 @@
     &:hover {
   text-decoration: none;
   color: #f7a799;
+    }
   }
-  }
-
 }
