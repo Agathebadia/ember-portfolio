@@ -4,12 +4,18 @@
         <strong>Home</strong>
       </LinkTo>
       <div id="toggle-component">
+        {{#unless @isToggled}}
+          <img src="assets/images/sun.png" alt="light mode">
+        {{/unless}}
         <XToggle
         @theme='light'
         @value={{@isToggled}}
         @onToggle={{@toggle}}
         @size={{'small'}}
         />
+        {{#if @isToggled}}
+          <img src="assets/images/moon.png" alt="dark mode">
+        {{/if}}
       </div>
     </div>
     <div class="about-contact">

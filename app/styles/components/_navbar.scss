@@ -25,12 +25,20 @@
   color: #f7a799;
     }
   }
+  #toggle-component {
+    display: inline-flex;
+    img {
+      margin: 0 5px 0 5px;
+      width: 24px;
+      height: 24px;
+    }
+  }
 }
 
 .navbar.purple {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: #0e0134;
   a, .toggle-component, p {
     color: #bf8de8;
     text-shadow: 5px 5px 5px #7d1785;
