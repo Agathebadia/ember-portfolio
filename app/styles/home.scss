@@ -9,8 +9,8 @@ h1, h2, h3 {
 
 .projects {
   text-align: center;
-  margin-top: 2em;
-  margin-bottom: 4em;
+  padding-top: 2em;
+  padding-bottom: 4em;
   text-shadow: 3px 3px 3px #f9e0db;
   .articles {
     display: grid;
@@ -27,6 +27,9 @@ h1, h2, h3 {
       border-radius: 4px;
       width: 72%;
       transition: 0.5s;
+      .purple-shadow {
+        box-shadow: -18px 15px 0px 3px #7d1785;
+      }
       img {
         margin: auto;
         width: 100%;
@@ -76,6 +79,14 @@ h1, h2, h3 {
         text-decoration: none;
       }
     }
+  }
+}
+
+.purple-background {
+  background-color: #0e0134;
+  h1, h2, p, a {
+    color: #bf8de8;
+    text-shadow: 5px 5px 5px #7d1785;
   }
 }
 

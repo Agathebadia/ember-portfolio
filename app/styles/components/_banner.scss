@@ -39,12 +39,10 @@
     box-shadow: -11px 15px 1px 2px #f9e0db;
   }
 
-  .title {
-    margin-bottom: 45px;
-  }
   .name-role {
     text-align: right;
     line-height: 2.2;
+     margin-bottom: 45px;
   }
   .tech-stack {
     text-align: left;
@@ -58,19 +56,42 @@
     background: transparent;
     background-image: url("../assets/images/neon-grid.jpg");
 
+  h1, h2, p, a {
+    color: #bf8de8;
+    text-shadow: 5px 5px 5px #7d1785;
+  }
+  .name-role-description {
+    .name-role {
+      border-width: 2px;
+      border-style: solid;
+      border-color: #bf8de8;
+      background-color: #0e0134;
+      box-shadow: -18px 15px 0px 3px #7d1785;
+    }
     .name-role, h1.title, h1, h2 {
-      color: #bf8de8;
-      background-color: #7d1785;
       width: fit-content;
       padding: 3px 3px 3px 3px;
       border-radius: 4px;
-      margin-bottom: 0;
       margin-left: auto;
-      text-shadow: 5px 5px 5px #212529;
+    }
+    .description-card {
+      box-shadow: -18px 15px 0px 3px #7d1785;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #bf8de8;
+      background-color: #0e0134;
     }
     img {
       background: none;
-      background-image: url("../assets/images/synthwave.gif");
+      //background-image: url("../assets/images/synthwave.gif");
+      z-index: -1;
+      }
+    }
+    .social-links a {
+      &:hover {
+        color: #a57acc;
+        text-decoration: none;
+      }
     }
   }
 

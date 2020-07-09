@@ -20,3 +20,21 @@ footer {
     }
   }
 }
+
+.purple-footer {
+  a {
+    color: #bf8de8;
+    text-shadow: 5px 5px 5px #7d1785;
+
+  &:hover {
+        color: #a57acc;
+        text-decoration: none;
+    }
+  }
+  border-width: 2px;
+  border-style: solid;
+  border-color: #bf8de8;
+  margin-top: 0;
+  background-color: #0e0134;
+  box-shadow: -18px 15px 0px 3px #7d1785;
+}
