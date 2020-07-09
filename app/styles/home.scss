@@ -17,7 +17,7 @@ h1, h2, h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     margin-top: 2rem;
-    .article {
+    article {
       display: grid;
       margin: auto;
       margin-bottom: 2rem;
@@ -27,9 +27,6 @@ h1, h2, h3 {
       border-radius: 4px;
       width: 72%;
       transition: 0.5s;
-      .purple-shadow {
-        box-shadow: -18px 15px 0px 3px #7d1785;
-      }
       img {
         margin: auto;
         width: 100%;
@@ -56,6 +53,15 @@ h1, h2, h3 {
       }
     }
   }
+}
+
+
+article.purple-shadow {
+  box-shadow: -18px 10px 0px 2px #7d1785 !important;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #bf8de8;
+  border-radius: 4px;
 }
 
 .social-media {
