@@ -1,6 +1,5 @@
-
 <NavBar @toggle={{this.toggleColor}} @isToggled={{this.isToggled}} />
-<div class="banner">
+<div class="banner {{if this.isToggled "purple-background"}}">
   <div class="about-photo">
     <img src="assets/images/female-dev.png" width="400" alt="Female developer">
   </div>
@@ -10,17 +9,17 @@
     </div>
     <div class="cards">
       <div class="card">
-        <img src="assets/images/html5.svg" height="60" alt="HTML5">
-        <img src="assets/images/css3.svg" height="60" alt="CSS3">
-        <img src="assets/images/bootstrap.svg" height="60" alt="Bootstrap">
+        <img src="assets/images/html5-original.svg" height="60" alt="HTML5">
+        <img src="assets/images/css3-original.svg" height="60" alt="CSS3">
+        <img src="assets/images/bootstrap-plain.svg" height="60" alt="Bootstrap">
       </div>
       <div class="card">
         <img src="assets/images/javascript.svg" height="60" alt="JavaScript">
         <img src="assets/images/ember.svg" height="60" alt="Ember">
       </div>
       <div class="card">
-        <img src="assets/images/git.svg" height="60" alt="Git">
-        <img src="assets/images/github.svg" height="60" alt="Github">
+        <img src="assets/images/git-plain.svg" height="60" alt="Git">
+        <img src="assets/images/github-original.svg" height="60" alt="Github">
       </div>
     </div>
   </div>

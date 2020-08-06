@@ -74,12 +74,15 @@
       border-radius: 4px;
       margin-left: auto;
     }
-    .description-card {
+    .description-card, .card {
       box-shadow: -18px 15px 0px 3px #7d1785;
       border-width: 2px;
       border-style: solid;
       border-color: #bf8de8;
       background-color: #0e0134;
+      img {
+        z-index: 1;
+      }
     }
     img {
       background: none;
