@@ -19,98 +19,102 @@
       </div>
       <div class="card">
         <img src="assets/images/git-plain.svg" height="60" alt="Git">
+        {{#if this.isToggled}}
+        <img src="assets/images/github-logo-white.png" height="60" alt="Github">
+        {{else}}
         <img src="assets/images/github-original.svg" height="60" alt="Github">
+        {{/if}}
       </div>
     </div>
   </div>
 </div>
 
-<div class="projects">
+<div class="projects {{if this.isToggled "purple-background"}}">
   <h1>Skills</h1>
-</div>
 
-<div class="skills">
-  <div class="skill">
-    <img src="assets/images/interview.png" width="80">
-    <div class="textOverText" data-inactive="Tech Recruitment"  data-hover="3+ years of experience">
-    </div>
-  </div>
-
-  <div class="skill">
-    <img src="assets/images/open-book.png" width="80">
-    <div class="textOverText" data-inactive="Popularizing/Teaching tech for non tech teams"   data-hover="Workshops & internal e-learning course for tech knowledge/awareness">
-    </div>
-  </div>
-
-  <div class="skill">
-    <img src="assets/images/team.svg" width="80">
-    <div class="textOverText"data-inactive="Mentoring & Coaching with 20+ people team" data-hover="Onboarded 20+ junior HR colleagues, led 4-5 teammembers">
-    </div>
-  </div>
-
-  <div class="skill">
-    <img src="assets/images/telemarketer.png" width="80">
-    <div class="textOverText" data-inactive="Developer support in their job hunt"  data-hover="2000+ calls with developers">
-    </div>
-  </div>
-
-  <div class="skill">
-    <img src="assets/images/bookshelf.png" width="80">
-    <div class="textOverText" data-inactive="Organisation/Structure"  data-hover="Notion, Trello, GCalencar Expert ;)">
-    </div>
-  </div>
-
-  <div class="skill">
-    <img src="assets/images/workspace.png" width="80">
-    <div class="textOverText" data-inactive="English & French speaker" data-hover="Native French, fluent in English">
-    </div>
-  </div>
-</div>
-
-<div class="projects" id="hobbies">
-  <h1>Hobbies</h1>
-</div>
-
-<div class="skills">
-
-  <div class="skill">
-    <a href="https://www.instagram.com/agathe.badia/"target="_blank">
-      <img src="assets/images/traveling.png" width="80">
-      <div class="textOverText" data-inactive="Traveling" data-hover="My gallery">
+  <div class="skills">
+    <div class="skill {{if this.isToggled "purple-shadow"}}">
+      <img src="assets/images/interview.png" width="80">
+      <div class="textOverText" data-inactive="Tech Recruitment"  data-hover="3+ years of experience">
       </div>
-    </a>
+    </div>
+
+    <div class="skill {{if this.isToggled "purple-shadow"}}">
+      <img src="assets/images/open-book.png" width="80">
+      <div class="textOverText" data-inactive="Popularizing/Teaching tech for non tech teams"   data-hover="Workshops & internal e-learning course for tech knowledge/awareness">
+      </div>
+    </div>
+
+    <div class="skill {{if this.isToggled "purple-shadow"}}">
+      <img src="assets/images/team.svg" width="80">
+      <div class="textOverText"data-inactive="Mentoring & Coaching with 20+ people team" data-hover="Onboarded 20+ junior HR colleagues, led 4-5 teammembers">
+      </div>
+    </div>
+
+    <div class="skill {{if this.isToggled "purple-shadow"}}">
+      <img src="assets/images/telemarketer.png" width="80">
+      <div class="textOverText" data-inactive="Developer support in their job hunt"  data-hover="2000+ calls with developers">
+      </div>
+    </div>
+
+    <div class="skill {{if this.isToggled "purple-shadow"}}">
+      <img src="assets/images/bookshelf.png" width="80">
+      <div class="textOverText" data-inactive="Organisation/Structure"  data-hover="Notion, Trello, GCalencar Expert ;)">
+      </div>
+    </div>
+
+    <div class="skill {{if this.isToggled "purple-sub-titles"}}">
+      <img src="assets/images/workspace.png" width="80">
+      <div class="textOverText" data-inactive="English & French speaker" data-hover="Native French, fluent in English">
+      </div>
+    </div>
   </div>
 
-  <div class="skill">
-    <a href="https://www.instagram.com/stories/highlights/17928442846193172/"target="_blank">
-      <img src="assets/images/paint.png" width="80">
-      <div class="textOverText" data-inactive="Paper & digital drawing, painting" data-hover="My drawings">
-      </div>
-    </a>
+  <div class="projects" id="hobbies">
+    <h1>Hobbies</h1>
   </div>
 
-  <div class="skill">
-    <a href="https://steamcommunity.com/profiles/76561198065118875" target="blank">
-      <img src="assets/images/gaming.png" width="80">
-      <div class="textOverText" data-inactive="Overwatch, the Witcher 3..." data-hover="Add me on Steam!">
-      </div>
-    </a>
-  </div>
+  <div class="skills">
 
-  <div class="skill">
-    <a href="https://www.pinterest.fr/agathebadia/cuisine/"target="_blank">
-      <img src="assets/images/cooking.png" width="80">
-      <div class="textOverText" data-inactive="Cooking" data-hover="Get inspiration here!">
-      </div>
-    </a>
-  </div>
+    <div class="skill {{if this.isToggled "purple-shadow"}}">
+      <a href="https://www.instagram.com/agathe.badia/"target="_blank">
+        <img src="assets/images/traveling.png" width="80">
+        <div class="textOverText" data-inactive="Traveling" data-hover="My gallery">
+        </div>
+      </a>
+    </div>
 
-  <div class="skill">
-    <a href="https://www.instagram.com/stories/highlights/17860289983507776/" target="_blank">
-      <img src="assets/images/reading.png" width="80">
-      <div class="textOverText" data-inactive="Reading" data-hover="Thrillers, personal development">
-      </div>
-    </a>
+    <div class="skill {{if this.isToggled "purple-shadow"}}">
+      <a href="https://www.instagram.com/stories/highlights/17928442846193172/"target="_blank">
+        <img src="assets/images/paint.png" width="80">
+        <div class="textOverText" data-inactive="Paper & digital drawing, painting" data-hover="My drawings">
+        </div>
+      </a>
+    </div>
+
+    <div class="skill {{if this.isToggled "purple-shadow"}}">
+      <a href="https://steamcommunity.com/profiles/76561198065118875" target="blank">
+        <img src="assets/images/gaming.png" width="80">
+        <div class="textOverText" data-inactive="Overwatch, the Witcher 3..." data-hover="Add me on Steam!">
+        </div>
+      </a>
+    </div>
+
+    <div class="skill {{if this.isToggled "purple-shadow"}}">
+      <a href="https://www.pinterest.fr/agathebadia/cuisine/"target="_blank">
+        <img src="assets/images/cooking.png" width="80">
+        <div class="textOverText" data-inactive="Cooking" data-hover="Get inspiration here!">
+        </div>
+      </a>
+    </div>
+
+    <div class="skill {{if this.isToggled "purple-shadow"}}">
+      <a href="https://www.instagram.com/stories/highlights/17860289983507776/" target="_blank">
+        <img src="assets/images/reading.png" width="80">
+        <div class="textOverText" data-inactive="Reading" data-hover="Thrillers, personal development">
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 

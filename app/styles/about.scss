@@ -33,6 +33,13 @@ h1, h2, h3 {
       margin-top: 10px;
       display: flex;
       justify-content: center;
+
+        .purple-sub-title{
+      h1, h2, p, a {
+      color: #bf8de8;
+      text-shadow: 5px 5px 5px #7d1785;
+        }
+      }
     }
 
     &:hover, &:focus {
@@ -60,6 +67,14 @@ h1, h2, h3 {
         font-style: normal;
         text-decoration: none;
         color: black;
+
+        .purple-sub-title{
+        h1, h2, p, a {
+        font-weight: bolder;
+        color: #bf8de8;
+        text-shadow: 5px 5px 5px #7d1785;
+          }
+        }
       }
 
       .textOverText:hover:after {
@@ -72,6 +87,14 @@ h1, h2, h3 {
       }
     }
   }
+
+  .purple-background {
+  background-color: #0e0134;
+  h1, h2, p, a {
+    color: #bf8de8;
+    text-shadow: 5px 5px 5px #7d1785;
+  }
+}
 
     // // light peach: #FEF4F2;
     //   medium peach: #F9E0DB #
