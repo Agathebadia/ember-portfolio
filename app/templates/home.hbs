@@ -1,6 +1,5 @@
-
-
-<div class="banner">
+<NavBar @toggle={{this.toggleColor}} @isToggled={{this.isToggled}} />
+<div class="banner {{if this.isToggled "purple-background"}}">
   <div class="name-role-description">
     <div class="name-role">
       <h2>Agathe Badia</h2>
@@ -11,86 +10,108 @@
       <span class="social-media">
         <p>Follow me :)</p>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/agathe-badia/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/Agathebadia" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://twitter.com/Agathe_BADIA" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/agathe.badia/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/agathe-badia/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Agathebadia" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/Agathe_BADIA" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/agathe.badia/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
         </div>
       </span>
     </div>
   </div>
   <div class="circle-picture">
-    <img src="assets/images/profile-picture2.png" width="300">
+    <img src="assets/images/profile-picture2.png" width="300" alt="Portrait of Agathe Badia">
   </div>
 </div>
 
-<div class="projects"><h1>Content writing</h1>
+<div class="projects {{if this.isToggled "purple-background"}}">
+
+    <h1>Projects</h1>
+
   <div class="articles">
-    <div class="article">
-      <a href="https://cult.honeypot.io/reads/journey-to-software-development/" target="_blank">
-        <img src="assets/images/journey-to-dev.jpg" height='230'>
-        <p>My Journey to Software Development</p>
-      </a>
-    </div>
-    <div class="article">
-      <a href="https://cult.honeypot.io/reads/being-a-junior-developer-during-covid-19" target="_blank">
-        <img src="assets/images/remote.jpg" height='230'>
-        <p>Being a Junior Developer during Covid-19</p>
-      </a>
-    </div>
-  </div>
-</div>
+      <article class="{{if this.isToggled "purple-shadow"}}">
+          <a href="https://becoming-a-developer.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/becoming-a-dev.png" height='230' alt="Preview of the landing page">
+            <p>Dev Stories, Ember App</p>
+          </a>
+      </article>
 
-<div class="projects">
-  <h1>Projects</h1>
-</div>
-
-<div class="container">
-      <!-- Post slider -->
-        <div class="post-slider">
-  <div class="post-wrapper">
-
-    {{#slick-slider adaptiveHeight=false pauseOnHover=true autoplay=true arrows=false nextArrow="<i class='fas fa-chevron-right next'></i>" prevArrow="<i class='fas fa-chevron-left prev'></i>"}}
-
-        <div class="post">
-          <div class="slider-image">
-            <a href="https://becoming-a-developer.netlify.app/" target="_blank">
-              <img src="assets/images/becoming-a-dev.png">
-              <p>Side project, Ember App</p>
-            </a>
-          </div>
-        </div>
-
-        <div class="post">
-          <div class="slider-image">
-            <a href="http://www.myoja.de/" target="_blank">
-            <img src="assets/images/oja.png">
+      <article class="{{if this.isToggled "purple-shadow"}}">
+          <a href="http://www.myoja.de/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/oja.png" height='230' alt="Preview of the app">
             <p>Bootcamp final app, two weeks project</p>
           </a>
-          </div>
-        </div>
+      </article>
 
-        <div class="post">
-          <div class="slider-image">
-            <a href="https://tooli-capmarvel.herokuapp.com/" target="_blank">
-            <img src="assets/images/tooli.png">
+      <article class="{{if this.isToggled "purple-shadow"}}">
+          <a href="https://tooli-capmarvel.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/tooli.png" height='230' alt="Preview of the app">
             <p>One week project</p>
           </a>
-          </div>
-        </div>
+      </article>
 
-        <div class="post">
-          <div class="slider-image">
-            <a href="https://rails-agathe-cocktail-322.herokuapp.com/" target="_blank">
-              <img src="assets/images/miss-cocktail.png">
-              <p>One day project</p>
-            </a>
-          </div>
-        </div>
+      <article class="{{if this.isToggled "purple-shadow"}}">
+          <a href="https://rails-agathe-cocktail-322.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/miss-cocktail.png" height='230' alt="Preview of the app">
+            <p>One day project</p>
+          </a>
+      </article>
+  </div>
+</div>
 
-        {{/slick-slider}}
-      </div>
-    </div>
-        </div>
+<div class="projects {{if this.isToggled "purple-background"}}">
 
+  <h1>Content writing</h1>
 
+  <div class="articles">
+    <article class="{{if this.isToggled "purple-shadow"}}">
+      <a href="https://cult.honeypot.io/reads/journey-to-software-development/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/journey-to-dev.jpg" height='230' alt="Agathe sitting at a desk, on her computer">
+        <p>My Journey to Software Development</p>
+      </a>
+    </article>
+    <article class="{{if this.isToggled "purple-shadow"}}">
+      <a href="https://cult.honeypot.io/reads/being-a-junior-developer-during-covid-19" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/remote.jpg" height='230' alt="Laptop">
+        <p>Being a Junior Developer during Covid-19</p>
+      </a>
+    </article>
+    <article class="{{if this.isToggled "purple-shadow"}}">
+      <a href="https://cult.honeypot.io/reads/should-i-join-a-coding-bootcamp/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/coding-bootcamp.jpg" height='230' alt="Agathe and another student, chatting and looking at a laptop">
+        <p>Should I Join a Coding Bootcamp?</p>
+      </a>
+    </article>
+  </div>
+</div>
+
+<div class="projects {{if this.isToggled "purple-background"}}">
+
+  <h1>Media</h1>
+
+  <div class="articles">
+    <article class="{{if this.isToggled "purple-shadow"}}">
+      <a href="https://www.zukunft-personal.com/media/filer_public/e7/32/e7323aed-4864-415c-b68d-beb4a5de39b8/zukunft-personal_media-lounge_pw_hh_09-2020.pdf#Karrierewechsel" target="_blank"
+        rel="noopener noreferrer">
+        <img src="assets/images/remote.jpg" height='230' alt="Laptop">
+        <p>Career Switch 'mit Vollgas!'
+          <img class="flag-icon" src="assets/images/germany.png" height='24' alt="German flag">
+        </p>
+      </a>
+    </article>
+
+    <article class="{{if this.isToggled "purple-shadow"}}">
+      <a href="https://www.sueddeutsche.de/karriere/arbeit-wie-werde-ich-softwareentwickler-in-dpa.urn-newsml-dpa-com-20090101-201023-99-52640"
+        target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/profile-picture.jpg" height='230' alt="Profile picture">
+        </a>
+      <p class="padding-top">Interview with DPA - Wie werde ich Softwareentwickler/in? - <em>Süddeutsche Zeitung</em> <img class="flag-icon" src="assets/images/germany.png" height='24' alt="German flag"></p>
+      <p>Also on <a href="https://www.zeit.de/news/2020-10/26/wie-werde-ich-softwareentwicklerin" target="_blank" rel="noopener noreferrer"> <strong>Zeit</strong></a>, <a href="https://www.handelsblatt.com/dpa/arbeit-wie-werde-ich-softwareentwickler-in/26307512.html?ticket=ST-3307083-BxDYH3dtf3fAz3t4JBYh-ap1" target="_blank"
+        rel="noopener noreferrer"><strong>Handelsblatt</strong></a>, <a href="https://www.merkur.de/leben/karriere/wie-werde-ich-softwareentwickler-in-zr-90080274.html" target="_blank"
+          rel="noopener noreferrer"><strong>Merkur</strong>...</a>
+      </p>
+    </article>
+  </div>
+</div>
+
+<Footer @toggle={{this.toggleColor}} @isToggled={{this.isToggled}}>
+</Footer>

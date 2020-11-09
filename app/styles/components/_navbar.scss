@@ -2,10 +2,19 @@
   display: flex;
   justify-content: space-between;
   background-color: white;
+
     span {
   padding: 15px 10px 15px 10px;
-}
-    a {
+  }
+
+  .home {
+    display: contents;
+  }
+  .toggle-component {
+    display: inline-flex;
+  }
+
+  a {
   font-family: 'Cantarell', sans-serif;
   font-size: 18px;
   text-decoration: none;
@@ -14,7 +23,28 @@
     &:hover {
   text-decoration: none;
   color: #f7a799;
+    }
   }
+  #toggle-component {
+    display: inline-flex;
+    img {
+      margin: 0 5px 0 5px;
+      width: 24px;
+      height: 24px;
+    }
   }
+}
 
+.navbar.purple {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0e0134;
+  a, .toggle-component, p {
+    color: #bf8de8;
+    text-shadow: 5px 5px 5px #7d1785;
+    &:hover {
+      color: #a57acc;
+      text-decoration: none;
+    }
+  }
 }

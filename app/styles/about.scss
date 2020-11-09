@@ -20,6 +20,17 @@ h1, h2, h3 {
   justify-content: center;
   flex-wrap: wrap;
 
+  article.skill, a {
+    &:hover, &:focus {
+      -ms-transform: scale(0.90); /* IE  */
+      -webkit-transform: scle(0.90); /* Safari */
+      transform: scale(0.90);
+      transition: 0.8s;
+      text-decoration: none;
+      font-style: normal;
+      color: black;
+    }
+  }
   .skill {
     text-align: center;
     max-width: 300px;
@@ -33,21 +44,8 @@ h1, h2, h3 {
       margin-top: 10px;
       display: flex;
       justify-content: center;
+      color: black;
     }
-
-    &:hover, &:focus {
-        -ms-transform: scale(0.90); /* IE  */
-        -webkit-transform: scle(0.90); /* Safari */
-        transform: scale(0.90);
-        transition: 0.8s;
-        a {
-          text-decoration: none;
-          font-style: normal;
-          color: black;
-        }
-
-      }
-
 
       .textOverText:after {
         content:attr(data-inactive);
@@ -59,7 +57,6 @@ h1, h2, h3 {
         overflow: hidden;
         font-style: normal;
         text-decoration: none;
-        color: black;
       }
 
       .textOverText:hover:after {
@@ -73,8 +70,45 @@ h1, h2, h3 {
     }
   }
 
+  .purple-background {
+  background-color: #0e0134;
+  h1, h2, p, a {
+    color: #bf8de8;
+    text-shadow: 5px 5px 5px #7d1785;
+  }
+}
+
+article.skill.purple-shadow {
+    text-align: center;
+    max-width: 300px;
+    min-width: 280px;
+    max-height: 200px;
+    padding: 5px;
+
+    .textOverText.purple-text {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      color: #bf8de8;
+      text-shadow: 5px 5px 5px #7d1785;
+    }
+
+     &:hover, &:focus {
+        -ms-transform: scale(0.90); /* IE  */
+        -webkit-transform: scle(0.90); /* Safari */
+        transform: scale(0.90);
+        transition: 0.8s;
+        a {
+          text-decoration: none;
+          font-style: normal;
+        }
+      }
+  }
+
     // // light peach: #FEF4F2;
     //   medium peach: #F9E0DB #
     //   dark-peach: #f7a799}
+@media screen and (min-width: 320px) and (max-width: 768px) {
 
+}
 

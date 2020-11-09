@@ -9,17 +9,18 @@ h1, h2, h3 {
 
 .projects {
   text-align: center;
-  margin-top: 2em;
-  margin-bottom: 4em;
+  padding-top: 2em;
+  padding-bottom: 4em;
   text-shadow: 3px 3px 3px #f9e0db;
   .articles {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     margin-top: 2rem;
-    .article {
+    article {
       display: grid;
       margin: auto;
+      margin-bottom: 2rem;
       box-shadow: 1rem 1rem 1rem -1rem #e5e3e3;
       margin-left: 2rem;
       margin-right: 2rem;
@@ -33,6 +34,9 @@ h1, h2, h3 {
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
       }
+      .flag-icon {
+          width: 24px;
+        }
       a {
         text-transform: none;
         color: inherit;
@@ -42,6 +46,9 @@ h1, h2, h3 {
         p {
           margin: 0;
           padding: 15px 0 15px 0;
+          .padding-top {
+          padding-top: 10px;
+          }
         }
       }
   &:hover, &:focus {
@@ -53,57 +60,15 @@ h1, h2, h3 {
     }
   }
 }
-.container {
 
-  .post-slider {
-    position: relative;
 
-    .post-wrapper {
-      width: 84%;
-      height: 305px;
-      margin: 0px auto;
-      overflow: hidden;
-      // padding: 10px 0 10px 0;
-
-      .post {
-        display: inline-block;
-        background-color: white;
-        max-width: 400px;
-        max-height: 300px;
-        margin: 0px 10px ;
-        border-radius: 4px;
-        margin-bottom: 25px;
-        object-fit: cover;
-        box-shadow: 1rem 1rem 1rem -1rem #e5e3e3;
-
-        .slider-image img {
-          width: 100%;
-          border-top-left-radius: 4px;
-          border-top-right-radius: 4px;
-
-        }
-
-        p, a {
-          color: black;
-          text-decoration: none;
-          font-style: normal;
-          text-align: center;
-          padding: 15px 0 5px 0;
-        }
-      }
-
-      .post-info {
-        max-height: 100px;
-        padding-top: 15px;
-        text-align: center;
-      }
-
-    }
-
-  }
+article.purple-shadow {
+  box-shadow: -18px 10px 0px 2px #7d1785 !important;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #bf8de8;
+  border-radius: 4px;
 }
-
-
 
 .social-media {
   display: flex;
@@ -125,6 +90,23 @@ h1, h2, h3 {
         font-style: normal;
         text-decoration: none;
       }
+    }
+  }
+}
+
+.purple-background {
+  background-color: #0e0134;
+  h1, h2, p, a {
+    color: #bf8de8;
+    text-shadow: 5px 5px 5px #7d1785;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .projects {
+    .articles {
+      display: grid;
+      grid-template-columns: 1fr;
     }
   }
 }

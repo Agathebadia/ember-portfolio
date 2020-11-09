@@ -37,48 +37,93 @@
     margin: 15px 0 15px 0;
     background-color: white;
     box-shadow: -11px 15px 1px 2px #f9e0db;
-
-    img {
-      padding: 5px 5px 5px 5px;
-    }
   }
 
-  // .cards {
-  // display: grid;
-  // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  // grid-gap: 40px;
-
-  // .card {
-  // border-radius: 3px;
-  // border-color: white;
-  // min-width: 200px;
-  // min-height: 70px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // text-align: center;
-  // margin: 0px 5px 0px 5px;
-  // background-color: white;
-  // box-shadow: -11px 15px 1px 2px #f9e0db;
-  //   img {
-  //     padding: 10px 10px 10px 10px;
-  //   }
-  // }
-  // }
-  .title {
-    margin-bottom: 45px;
-  }
   .name-role {
     text-align: right;
     line-height: 2.2;
+     margin-bottom: 45px;
   }
   .tech-stack {
     text-align: left;
   }
-  .about-photo img{
+  .about-photo img {
     border-radius: 3px;
   }
 }
 
+.banner.purple-background {
+    background: transparent;
+    background-image: url("../assets/images/neon-grid.jpg");
 
+  h1, h2, p, a {
+    color: #bf8de8;
+    text-shadow: 5px 5px 5px #7d1785;
+  }
+  .name-role-description {
+    .name-role {
+      border-width: 2px;
+      border-style: solid;
+      border-color: #bf8de8;
+      background-color: #0e0134;
+      box-shadow: -18px 15px 0px 3px #7d1785;
+    }
+    .name-role, h1.title, h1, h2 {
+      width: fit-content;
+      padding: 3px 3px 3px 3px;
+      border-radius: 4px;
+      margin-left: auto;
+    }
+    .description-card, .card {
+      box-shadow: -18px 15px 0px 3px #7d1785;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #bf8de8;
+      background-color: #0e0134;
+      img {
+        z-index: 1;
+      }
+    }
+    img {
+      background: none;
+      //background-image: url("../assets/images/synthwave.gif");
+      z-index: -1;
+      }
+    }
+    .social-links a {
+      &:hover {
+        color: #a57acc;
+        text-decoration: none;
+      }
+    }
+  }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .banner {
+    min-height: 27rem;
+    .title {
+      margin-bottom: 1rem;
+      font-size: 28px;
+    }
+   .circle-picture img {
+      width: 8rem;
+      height: 8rem;
+      margin-top: 4rem;
+    }
+    .description-card {
+      margin-bottom: 30px;
+    }
+    .about-photo img {
+      width: 14rem;
+    }
+    .card {
+      min-width: 120px;
+      img {
+        padding-left: 5px;
+        padding: 0;
+        width: 2rem;
+        margin-right: 5px;
+      }
+    }
+  }
+}
