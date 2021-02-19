@@ -63,6 +63,7 @@
     "edition": "octane"
   },
   "dependencies": {
-    "utf-8-validate": "^5.0.2"
+    "utf-8-validate": "^5.0.2",
+    "yarn": "^1.22.10"
   }
 }
