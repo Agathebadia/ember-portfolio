@@ -1,0 +1,9 @@
+{{#each @project as | item |}}
+  <article class="{{if @isToggled " purple-shadow"}}">
+    <a aria-label={{item.aria-label}} href={{item.href}}
+      rel="noreferrer noopener" height='230' target="_blank">
+      <img src={{item.src}} alt={{item.alt}}>
+      <p>{{item.title}}</p>
+    </a>
+  </article>
+{{/each}}

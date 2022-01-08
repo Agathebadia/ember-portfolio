@@ -32,40 +32,9 @@
     <h1>Projects</h1>
 
   <div class="articles">
-      <article class="{{if this.isToggled "purple-shadow"}}">
-        <a aria-label="Colorblindness Emulator. Will open in a new window" href="https://colorblindness-emulator.netlify.app/" rel="noreferrer noopener" target="_blank">
-        <img src="assets/images/color-preview.png" alt="Preview of the emulator">
-        <p>Colorblindness Emulator, Ember App</p>
-        </a>
-      </article>
-
-      <article class="{{if this.isToggled "purple-shadow"}}">
-          <a aria-label="Visit Dev Stories Project" href="https://becoming-a-developer.netlify.app/" rel="noreferrer noopener"  target="_blank">
-            <img src="assets/images/becoming-a-dev.png" height='230' alt="Preview of the landing page">
-            <p>Dev Stories, Ember App</p>
-          </a>
-      </article>
-
-      <article class="{{if this.isToggled " purple-shadow"}}">
-        <a aria-label="Visit Dev Knight Adventure Project" href="https://dev-knight-adventure.netlify.app/" rel="noreferrer noopener"  target="_blank">
-          <img src="assets/images/dev-knight-adv.png" height='230' alt="Preview of the app">
-          <p>Text-RPG, Javascript</p>
-        </a>
-      </article>
-
-      <article class="{{if this.isToggled "purple-shadow"}}">
-          <a aria-label="Visit Github repository of Interview tracker project" href="https://github.com/Agathebadia/interview_tracker" rel="noreferrer noopener"  target="_blank">
-            <img src="assets/images/oja.png" height='230' alt="Preview of the app">
-            <p>Bootcamp final app, two weeks project</p>
-          </a>
-      </article>
-
-      <article class="{{if this.isToggled "purple-shadow"}}">
-          <a aria-label="Visit Tooli Project" href="https://tooli-capmarvel.herokuapp.com/" rel="noreferrer noopener"  target="_blank">
-            <img src="assets/images/tooli.png" height='230' alt="Preview of the app">
-            <p>One week project</p>
-          </a>
-      </article>
+      <Article
+        @isToggled={{this.isToggled}}
+        @project={{@model.project}} />
   </div>
 </div>
 
