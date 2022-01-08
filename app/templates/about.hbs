@@ -7,25 +7,11 @@
     <div class="tech-stack">
       <h1 class="title">Tech stack</h1>
     </div>
-    <div class="cards">
-      <div class="card">
-        <img src="assets/images/html5-original.svg" height="60" alt="HTML5">
-        <img src="assets/images/css3-original.svg" height="60" alt="CSS3">
-        <img src="assets/images/sass.svg" alt="Sass" height="80">
-      </div>
-      <div class="card">
-        <img src="assets/images/javascript.svg" height="60" alt="JavaScript">
-        <img src="assets/images/ember.svg" height="60" alt="Ember">
-      </div>
-      <div class="card">
-        <img src="assets/images/git-plain.svg" height="60" alt="Git">
-        {{#if this.isToggled}}
-        <img src="assets/images/github-logo-white.png" height="60" alt="Github">
-        {{else}}
-        <img src="assets/images/github-original.svg" height="60" alt="Github">
-        {{/if}}
-      </div>
-    </div>
+    <TechStack
+      @isToggled={{this.isToggled}}
+      @basics={{@model.techstack1}}
+      @languages={{@model.techstack2}}
+      @other={{@model.techstack3}} />
   </div>
 </div>
 
