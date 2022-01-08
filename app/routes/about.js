@@ -19,11 +19,11 @@ export default class AboutRoute extends Route {
            height: '80',
           alt: 'Sass'
         },
-        {
-         src: "assets/images/sass.svg",
-          height: '80',
-          alt: 'Tailwind'
-        }
+        // {
+        //  src: "assets/images/tailwind.svg",
+        //   height: '80',
+        //   alt: 'Tailwind'
+        // }
       ],
       techstack2: [
         {
@@ -49,11 +49,11 @@ export default class AboutRoute extends Route {
            height: '60',
           alt: 'Github'
         },
-        {
-           src: "assets/images/bitbucket.svg",
-           height: '60',
-          alt: 'Bitbucket'
-        },
+        // {
+        //    src: "assets/images/bitbucket.svg",
+        //    height: '60',
+        //   alt: 'Bitbucket'
+        // },
       ],
     };
   }

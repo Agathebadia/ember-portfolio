@@ -14,7 +14,7 @@
     {{#if @isToggled}}
       <img src="assets/images/git-plain.svg" height="60" alt="Git">
       <img src="assets/images/github-logo-white.png" height="60" alt="Github">
-      <img src="assets/images/bitbucket.svg" height="60" alt="Git">
+      {{!-- <img src="assets/images/bitbucket.svg" height="60" alt="Git"> --}}
     {{else}}
       {{#each @other as | item |}}
         <img src={{item.src}} height={{item.height}} alt={{item.alt}}>
