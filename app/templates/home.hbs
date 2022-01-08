@@ -43,44 +43,9 @@
   <h1>Content</h1>
 
   <div class="articles">
-
-    <article class="{{if this.isToggled " purple-shadow"}}">
-      <a aria-label="Visit Agathe's Diary Podcast" href="https://www.buzzsprout.com/1248158" rel="noreferrer noopener"  target="_blank">
-        <img id="photo-cover-fit" src="assets/images/Agathe-s-Diary.jpg" height='230' alt="Rubber duck with the title of the podcast, Agathe's Diary">
-        <p>Agathe's Diary - Podcast & Tech Stories</p>
-      </a>
-    </article>
-
-    <article class="{{if this.isToggled " purple-shadow"}}">
-      <a aria-label="Visit Untold Developer Stories Podcast" href="https://www.buzzsprout.com/979024" rel="noreferrer noopener"
-        target="_blank">
-        <img id="photo-cover-fit" src="assets/images/untold-stories.jpg" height='230'
-          alt="glitchy background with a title with a black round centered design 'Untold developer stories">
-        <p>Untold Developer Stories - Audio podcast</p>
-      </a>
-    </article>
-
-    <article class="{{if this.isToggled " purple-shadow"}}">
-      <a aria-label="Visit Untold Developer Stories, Youtube podcast" href="https://www.youtube.com/playlist?list=PLtEPUaeDclkvfFlePNrYqYUrtDhEB6g-I"
-        rel="noreferrer noopener" target="_blank">
-        <img id="photo-cover-fit" src="assets/images/youtube.png" height='230'
-          alt="glitchy background with a title with a black round centered design 'Untold developer stories">
-        <p>Untold Developer Stories - Youtube Podcast</p>
-      </a>
-    </article>
-
-    <article class="{{if this.isToggled "purple-shadow"}}">
-      <a aria-label="Check out Agathe's contributions on Honeypot's community platform" href="https://cult.honeypot.io/contributors/agathe-badia" rel="noreferrer noopener"  target="_blank">
-        <img src="assets/images/coding-bootcamp.jpg" height='230' alt="Agathe and another student, chatting and looking at a laptop">
-        <p>Contributor on cult, Honeypot's Community Platform</p>
-      </a>
-    </article>
-    <article class="{{if this.isToggled "purple-shadow"}}">
-      <a aria-label="Visit Agathe's Accessible Blog" href="https://inclusive-blog-post.netlify.app/" rel="noreferrer noopener"  target="_blank">
-        <img src="assets/images/journey-to-dev.jpg" height='230' alt="Agathe sitting at a desk, on her computer">
-        <p>Accessible & Inclusive Blog</p>
-      </a>
-    </article>
+    <Content
+      @isToggled={{this.isToggled}}
+      @content={{@model.content}} />
   </div>
 </div>
 
