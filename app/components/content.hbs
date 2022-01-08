@@ -1,0 +1,8 @@
+{{#each @content as | item |}}
+  <article class="{{if @isToggled " purple-shadow"}}">
+    <a aria-label={{item.aria-label}} href={{item.href}} rel="noreferrer noopener" target="_blank">
+      <img id="photo-cover-fit" height={{item.height}} src={{item.src}} alt={{item.alt}}>
+      <p>{{item.title}}</p>
+    </a>
+  </article>
+{{/each}}

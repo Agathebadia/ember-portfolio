@@ -61,6 +61,10 @@ h1, h2, h3 {
   }
 }
 
+img#photo-cover-fit {
+  object-fit: scale-down;
+}
+
 
 article.purple-shadow {
   box-shadow: -18px 10px 0px 2px #7d1785 !important;

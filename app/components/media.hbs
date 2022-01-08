@@ -1,0 +1,13 @@
+{{#each @media as | item |}}
+  <article class="{{if @isToggled " purple-shadow"}}">
+    <a aria-label={{item.aria-label}} href={{item.href}} rel="noreferrer noopener" target="_blank">
+      <img id={{item.id}} height={{item.height}} src={{item.src}} alt={{item.alt}}>
+      <p class="padding-top">
+        {{item.title}}
+        {{#if item.flag}}
+          <img class="flag-icon" src="assets/images/germany.png" height='24' alt="German flag">
+        {{/if}}
+      </p>
+    </a>
+  </article>
+{{/each}}

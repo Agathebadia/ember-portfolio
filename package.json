@@ -63,6 +63,9 @@
     "edition": "octane"
   },
   "dependencies": {
-    "utf-8-validate": "^5.0.2"
+    "node-gyp": "^7.1.2",
+    "node-sass": "^5.0.0",
+    "utf-8-validate": "^5.0.2",
+    "yarn": "^1.22.10"
   }
 }
