@@ -141,6 +141,28 @@ export default class HomeRoute extends Route {
           href: "https://talente.co/recruiting/7854/it-fachkraefte-gewinnen/"
         }
       ],
+      social: [
+        {
+          class: "fab fa-linkedin-in",
+          "aria-label": "Visit my Linkedin profile",
+          href: "https://www.linkedin.com/in/agathe-badia/"
+        },
+        {
+          class: "fab fa-github",
+          "aria-label": "Visit my Github profile",
+          href: "https://github.com/Agathebadia"
+        },
+        {
+           class: "fab fa-twitter",
+          "aria-label": "Follow me on Twitter",
+          href: "https://twitter.com/Agathe_BADIA"
+        },
+        {
+           class: "fab fa-instagram",
+          "aria-label": "Follow me on Instagram",
+          href: "https://www.instagram.com/agathe.badia/"
+        },
+      ],
     };
   }
 }
